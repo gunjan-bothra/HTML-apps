@@ -1,0 +1,105 @@
+/* #main_wrapper {
+    width: 57%;
+    margin: auto;
+} */
+* {
+    box-sizing: border-box;
+  }
+  
+#MainTitle {
+    background-color:yellow;
+    padding : 2%;
+    text-align:center;
+}
+#mainHeading {
+    padding:7%;
+    background-color:#1abc9c;
+    text-align:center;
+    color:white;
+}
+#navContainer {
+    background-color: #333;
+    /* display:flex;
+    flex-direction: row; */
+}
+#navContainer ul {  
+    list-style-type:none;
+    display:flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-top:0;
+   
+}
+#navContainer li {
+    padding: 15px 20px 15px 20px ;
+    text-align:center;
+}
+#navContainer li a {
+    color: white;
+    text-decoration: none;
+    
+}
+#navContainer li:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  #navContainer li:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  #mainContent {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #aside {
+    /* flex:30%; */
+    background-color:#f1f1f1;
+    margin-top:0;
+    padding: 20px;
+    
+  }
+  #article {
+    /* flex: 70%; */
+    background-color: white;
+    padding: 20px;
+  }
+  .image1 {
+      background-color: #aaa;
+      padding: 20px;
+      margin-top:20px;
+      /* display:flex;
+      flex: */
+  }
+  .image2 {
+    background-color: #aaa;
+    padding: 15px;
+    /* display:flex;
+    flex: */
+}
+h1 {
+    text-transform: uppercase;
+}
+
+  
+
+@media only screen and (max-width:600px) {
+    #navContainer ul { 
+        flex-direction:column;
+    }
+
+}
+@media only screen and (min-width:600px) {
+    #aside { 
+        flex: 1 0 0;
+    }
+    #article {
+        flex:  0 0 400px;
+    }
+
+}
+@media only screen and (min-width:900px) {
+    #mainContent {
+        max-width:60%;
+        margin:auto;
+    }
+}

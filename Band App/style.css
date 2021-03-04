@@ -1,0 +1,145 @@
+/* html, body {
+    max-width: 90%;
+    margin:auto;
+    overflow-x: hidden;
+} */
+div.disabled {
+    overflow-x: hidden; 
+    overflow-y: scroll; 
+}
+ * {
+     box-sizing:border-box;
+ }
+ .navBar {
+    background-color: black;
+    padding:10px;
+ }
+
+ .overlay {
+    width:0;
+    height:60%;
+    position:fixed;
+    top:0;
+    right:0;
+    transition: 0.5s;
+    list-style-type:none;
+    overflow-x: hidden;
+    z-index:1;
+    display:flex;
+    flex-direction: column;
+}
+.overlay li {
+    padding:15px;
+} 
+.overlay li a {
+     color: red;
+    font-size: 15px;
+    font-family:"Lato", sans-serif;
+    text-decoration:none;
+}
+.sideMenu {
+    color:white;
+    align-items:right;
+    text-decoration: none;
+    visibility:visible;
+} 
+
+#navMenuDesktop {
+    visibility: hidden;
+}
+#navMenuMobile {
+    visibility: visible;
+}
+.mySlides {
+    position:relative;
+}
+.image {
+    object-fit:cover;
+}
+.imageText {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color:white;
+    visibility:visible;
+  }
+  .SectionMargin {
+    margin-bottom:60px;
+    padding: 10px;
+    
+}
+  .tourDates {
+      background-color: black;
+      color:white;
+  }
+  /* .tourAnnounce {
+      color:white;
+  } */
+ 
+  .textAlign {
+      text-align:center;
+  }
+  .slots {
+      list-style-type:none;
+      background-color: white;
+      padding:0;
+  }
+  .slots li {
+    border:1px solid black;
+    color:black;
+    padding:10px;
+  }
+.statusHighlight{
+    background-color: #f44336;
+    padding:4px;
+    margin-left: 20px;
+}
+.dates {
+    padding: 10px;
+}
+/* .places {
+    padding: 10px 10px 0 10px;
+} */
+.cityInfo {
+    background-color: white;
+    color:black;
+    margin:0;
+    padding:0;
+}
+  
+  
+@media only screen and (min-width:600px) {
+    .overlay {
+        display:flex;
+        flex-direction: row;
+        width:100%;
+    }
+    #navMenuDesktop {
+        visibility: visible;
+    }
+    #navMenuMobile {
+        visibility: hidden;
+    }
+    .sideMenu {
+        visibility:hidden;
+    }
+    .textAlign {
+        width:60%;
+        margin:auto;
+    }
+    .SectionMarginDesktop {
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+} 
+@media only screen and (max-width:400px) {
+    .imageText {
+        visibility:hidden;
+    }    
+}
+

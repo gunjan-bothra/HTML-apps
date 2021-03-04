@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="app.js"></script>
+        <style>
+            table, tr, th, td {
+                border:1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form name="form">
+            <input id-"name1" type="text" name="name" value="">
+            <input id="age1"  type="number" name="age" value="">
+            <input type="button" value="Add" onclick="fnOnClick()">
+        </form>
+        <table id="myTable">
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </table>
+    </body>
+    <script>
+    function fnOnClick() {
+       
+        var myName = document.forms["form"]["name"].value;
+        var age = document.forms["form"]["age"].value;
+
+        var btn = document.createElement("input");
+        btn.setAttribute("type", "button");
+        btn.setAttribute("value","delete");
+        btn.setAttribute("onclick", "onDelete()");
+
+        var tbl = document.getElementById("myTable");
+        var tr = tbl.insertRow(tbl.rows.length);
+        
+        // var tc0 = tr.insertCell(0);
+        // tc0.appendChild(btn);
+        tr.insertCell(0).innerHTML= '<input type="button" value = "Delete" onclick="javacsript:deleteRow(this)">';
+        var tc1 = tr.insertCell(1);
+        var tc2 = tr.insertCell(2);
+        tc1.innerHTML = myName;
+        tc2.innerHTML = age;
+    }
+    </script>
+</html>

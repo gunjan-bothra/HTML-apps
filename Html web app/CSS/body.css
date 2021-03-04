@@ -1,0 +1,40 @@
+section {
+    background: url('../images/line.png') repeat-x bottom;
+    padding-bottom:15px;
+    /* width:"100%"; */
+}
+/* section:after{
+    content:"";
+    clear: both;
+    display: table;
+} */
+article, aside
+{
+    display: inline-block;
+    /* float:left; */
+    vertical-align: top;
+    text-align: justify;
+}
+
+article {
+    width: 665px;
+    /* width */
+    margin-right:20px;
+}
+aside
+{ 
+    width: 235px;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.em; 
+    position:relative;
+    right:0px;
+    top:0px;
+}
+.zozoPicture {
+    text-align:center;
+}
+
